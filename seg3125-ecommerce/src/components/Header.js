@@ -60,6 +60,7 @@ const Header = () => {
           <li><a href="/">Shooters</a></li>
           <li><a href="/">Sports/Racing</a></li>
           <li><a href="/">Puzzle</a></li>
+          <li><a href="/">Horror</a></li>
           <li><a href="/">Casual</a></li>
           <li><a href="/">Co-op</a></li>
         </ul>
