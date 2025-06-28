@@ -1,13 +1,9 @@
-import Container from 'react-bootstrap/Container';
-import './home.css';
-import { Link } from 'react-router-dom';
+import { useEffect, useState } from "react";
 import { games } from './GameList';
 
 function Home() {
-  return(
-    <div className="body">
-      
-    </div>
+  return (
+    <h1>Home</h1>    
   );
 }
 export default Home;
