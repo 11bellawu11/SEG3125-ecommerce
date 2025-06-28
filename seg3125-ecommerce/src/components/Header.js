@@ -56,13 +56,8 @@ const Header = () => {
           <li><a href="/">Adventure</a></li>
           <li><a href="/">RPG</a></li>
           <li><a href="/">Simulation</a></li>
-          <li><a href="/">Strategy</a></li>
-          <li><a href="/">Shooters</a></li>
-          <li><a href="/">Sports/Racing</a></li>
-          <li><a href="/">Puzzle</a></li>
           <li><a href="/">Horror</a></li>
-          <li><a href="/">Casual</a></li>
-          <li><a href="/">Co-op</a></li>
+      
         </ul>
       </nav>
     </aside>
