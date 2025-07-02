@@ -1,0 +1,36 @@
+.game-row {
+  margin-bottom: 2rem;
+  padding: 4rem;
+}
+
+h1,h2{
+    color: #fff;
+}
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1rem 0;
+  scrollbar-width:unset;
+}
+
+.scroll-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.game-card {
+  min-width: 200px;
+  flex-shrink: 0;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  width: 500px;
+  height: 300px;
+}
+
