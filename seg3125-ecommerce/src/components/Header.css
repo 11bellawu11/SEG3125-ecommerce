@@ -123,3 +123,8 @@
   background: rgba(0,0,0,0.5);
   z-index: 900;
 }
+
+
+.cart-button{
+  width: 50%;
+}

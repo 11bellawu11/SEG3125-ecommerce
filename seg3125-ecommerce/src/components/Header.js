@@ -4,6 +4,7 @@ import Col from 'react-bootstrap/Row';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import InputGroup from 'react-bootstrap/InputGroup';
+import { FaShoppingCart } from "react-icons/fa";
 
 import React, { useState } from 'react';
 import "./Header.css";
@@ -59,6 +60,13 @@ const Header = () => {
           <li><a href="/">Horror</a></li>
       
         </ul>
+        <div className="buttom-container">
+          <Button className="cart-button">
+            <FaShoppingCart style={{margin:"5%"}}/>
+            My Cart
+          </Button>
+        </div>
+
       </nav>
     </aside>
 
