@@ -3,6 +3,7 @@ import './App.css';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './pages/home';
+import CartAndPayment from './pages/cartandpayment';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/cart" element={<CartAndPayment/>} />
       </Routes>
     </Router>
   );

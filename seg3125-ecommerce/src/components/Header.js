@@ -8,6 +8,9 @@ import { FaShoppingCart } from "react-icons/fa";
 
 import React, { useState } from 'react';
 import "./Header.css";
+import { Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import CartAndPayment from '../pages/cartandpayment';
 
 const Header = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -33,7 +36,7 @@ const Header = () => {
         </button>
       </Col>
       <Col className="col2">
-        <h1 className="logo">Buy Games</h1>
+        <Link to="/" className="logo">Buy Games</Link>
       </Col>
       <Col className="col3">
         <Form onSubmit={handleSearch} className="search-form">
@@ -61,10 +64,10 @@ const Header = () => {
       
         </ul>
         <div className="buttom-container">
-          <Button className="cart-button">
-            <FaShoppingCart style={{margin:"5%"}}/>
+          <Link to="/cart" className="cart-button">
+            <FaShoppingCart style={{marginRight:"5%"}}/>
             My Cart
-          </Button>
+          </Link>
         </div>
 
       </nav>
