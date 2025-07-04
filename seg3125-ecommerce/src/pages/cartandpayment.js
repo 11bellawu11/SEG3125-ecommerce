@@ -11,7 +11,7 @@ import {
 import { useCart } from "../components/cartupdates";
 
 const CartAndPayment = () => {
-  const { cartItems } = useCart();
+  const { cartItems, removeFromCart } = useCart();
 
   const total = cartItems
     .reduce((acc, item) => acc + item.price, 0)
@@ -51,6 +51,7 @@ const CartAndPayment = () => {
         </Col>
 
         {/* Cart Summary */}
+  {/* Cart Summary */}
         <Col md={5}>
           <h4>Cart Summary</h4>
           <Card>
@@ -59,20 +60,29 @@ const CartAndPayment = () => {
                 <ListGroup.Item>Your cart is empty.</ListGroup.Item>
               ) : (
                 cartItems.map((item) => (
-                  <ListGroup.Item key={item.id}>
-                    <div className="d-flex justify-content-between">
-                      <span>{item.title}</span>
-                      <span>${item.price.toFixed(2)}</span>
+                  <ListGroup.Item key={item.id} className="d-flex justify-content-between align-items-center">
+                    <div>
+                      <strong>{item.title}</strong>
+                      <div>${item.price.toFixed(2)}</div>
                     </div>
+                    <Button
+                      variant="outline-danger"
+                      size="sm"
+                      onClick={() => removeFromCart(item.id)}
+                    >
+                      Remove
+                    </Button>
                   </ListGroup.Item>
                 ))
               )}
-              <ListGroup.Item>
-                <div className="d-flex justify-content-between">
-                  <strong>Total</strong>
-                  <strong>${total}</strong>
-                </div>
-              </ListGroup.Item>
+              {cartItems.length > 0 && (
+                <ListGroup.Item>
+                  <div className="d-flex justify-content-between">
+                    <strong>Total</strong>
+                    <strong>${total}</strong>
+                  </div>
+                </ListGroup.Item>
+              )}
             </ListGroup>
           </Card>
         </Col>
