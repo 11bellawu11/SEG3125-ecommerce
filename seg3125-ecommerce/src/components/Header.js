@@ -63,10 +63,13 @@ const Header = ({ searchTerm, setSearchTerm, selectedGenres, toggleGenre }) => {
               </li>
             ))}
           </ul>
-          <div className="buttom-container">
+          <div className="button-container">
             <Link to="/cart" className="cart-button">
               <FaShoppingCart style={{ marginRight: "5%" }} />
               My Cart
+            </Link>
+            <Link to="/about-us" className="aboutUsBtn">
+              About us
             </Link>
           </div>
         </nav>

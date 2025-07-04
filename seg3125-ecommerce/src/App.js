@@ -4,6 +4,7 @@ import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './pages/home';
 import CartAndPayment from './pages/cartandpayment';
+import AboutUs from './pages/aboutUs';
 import { CartProvider } from './components/cartupdates';
 import React, { useState } from 'react';
 
@@ -35,6 +36,7 @@ function App() {
             element={<Home searchTerm={searchTerm} selectedGenres={selectedGenres} />}
           />
           <Route path="/cart" element={<CartAndPayment />} />
+          <Route path="/about-us" element={<AboutUs />} />
         </Routes>
       </Router>
     </CartProvider>
