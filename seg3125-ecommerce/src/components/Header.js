@@ -12,65 +12,67 @@ import { Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import CartAndPayment from '../pages/cartandpayment';
 
-const Header = ({ searchTerm, setSearchTerm }) => {
+const Header = ({ searchTerm, setSearchTerm, selectedGenres, toggleGenre }) => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const genres = ['Action', 'Adventure', 'RPG', 'Simulation', 'Horror'];
+
   const handleSearch = (e) => {
     e.preventDefault();
   };
 
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-
   const toggleSidebar = () => {
-    setIsSidebarOpen((prev) => !prev);
+    setIsSidebarOpen(prev => !prev);
   };
 
   return (
     <>
-    <header className="header">
-      <Col className="col1">
-      <button className="menu-toggle" onClick={toggleSidebar}>
-          ☰
-        </button>
-      </Col>
-      <Col className="col2">
-        <Link to="/" className="logo">Buy Games</Link>
-      </Col>
-      <Col className="col3">
-        <Form onSubmit={handleSearch} className="search-form">
-          <input
-            type="text"
-            placeholder="Search..."
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            className="search-input"
-          />
-          <Button type="submit" className="search-button">Go</Button>
-        </Form>      
-      </Col>
-    </header>
-
-    <aside className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
-      <nav>
-        <ul>
-          <li><a href="/">All Games</a></li>
-          <li><a href="/">Action</a></li>
-          <li><a href="/">Adventure</a></li>
-          <li><a href="/">RPG</a></li>
-          <li><a href="/">Simulation</a></li>
-          <li><a href="/">Horror</a></li>
-      
-        </ul>
-        <div className="buttom-container">
-          <Link to="/cart" className="cart-button">
-            <FaShoppingCart style={{marginRight:"5%"}}/>
-            My Cart
-          </Link>
+      <header className="header">
+        <div className="col1">
+          <button className="menu-toggle" onClick={toggleSidebar}>☰</button>
         </div>
+        <div className="col2">
+          <Link to="/" className="logo">Buy Games</Link>
+        </div>
+        <div className="col3">
+          <Form onSubmit={handleSearch} className="search-form">
+            <input
+              type="text"
+              placeholder="Search..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="search-input"
+            />
+            <Button type="submit" className="search-button">Go</Button>
+          </Form>
+        </div>
+      </header>
 
-      </nav>
-    </aside>
+      <aside className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
+        <nav>
+          <ul>
+            {genres.map((genre) => (
+              <li key={genre}>
+                <label>
+                  <input
+                    type="checkbox"
+                    checked={selectedGenres.includes(genre)}
+                    onChange={() => toggleGenre(genre)}
+                  />
+                  {genre}
+                </label>
+              </li>
+            ))}
+          </ul>
+          <div className="buttom-container">
+            <Link to="/cart" className="cart-button">
+              <FaShoppingCart style={{ marginRight: "5%" }} />
+              My Cart
+            </Link>
+          </div>
+        </nav>
+      </aside>
 
-    {isSidebarOpen && <div className="overlay" onClick={toggleSidebar}></div>}
-    
+      {isSidebarOpen && <div className="overlay" onClick={toggleSidebar}></div>}
     </>
   );
 };
