@@ -12,13 +12,9 @@ import { Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import CartAndPayment from '../pages/cartandpayment';
 
-const Header = () => {
-  const [searchTerm, setSearchTerm] = useState('');
-
+const Header = ({ searchTerm, setSearchTerm }) => {
   const handleSearch = (e) => {
     e.preventDefault();
-    alert(`Searching for: ${searchTerm}`);
-    // Add search logic here
   };
 
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);

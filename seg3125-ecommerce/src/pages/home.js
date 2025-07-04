@@ -7,9 +7,12 @@ import './home.css';
 import { useCart } from "../components/cartupdates";
 import GameRow from '../components/GameRow';
 
-function Home() {
-  const { games, addToCart } = useCart(); // ✅ use global state
+function Home({ searchTerm }) {
+  const { games, addToCart } = useCart(); 
 
+  const filteredGames = games.filter(game =>
+    game.title.toLowerCase().includes(searchTerm.toLowerCase())
+  );
   return (
     <div className="app-container">
       <Row>
@@ -31,11 +34,11 @@ function Home() {
         </Col>
       </Row>
 
-      <GameRow title="Action Games" games={games.filter(g => g.type === "Action")} onAddToCart={addToCart} />
-      <GameRow title="Adventure Games" games={games.filter(g => g.type === "Adventure")} onAddToCart={addToCart} />
-      <GameRow title="Simulation Games" games={games.filter(g => g.type === "Simulation")} onAddToCart={addToCart} />
-      <GameRow title="Horror Games" games={games.filter(g => g.type === "Horror")} onAddToCart={addToCart} />
-      <GameRow title="RPG Games" games={games.filter(g => g.type === "RPG")} onAddToCart={addToCart} />
+       <GameRow title="Action Games" games={filteredGames.filter(g => g.type === "Action")} onAddToCart={addToCart} />
+      <GameRow title="Adventure Games" games={filteredGames.filter(g => g.type === "Adventure")} onAddToCart={addToCart} />
+      <GameRow title="Simulation Games" games={filteredGames.filter(g => g.type === "Simulation")} onAddToCart={addToCart} />
+      <GameRow title="Horror Games" games={filteredGames.filter(g => g.type === "Horror")} onAddToCart={addToCart} />
+      <GameRow title="RPG Games" games={filteredGames.filter(g => g.type === "RPG")} onAddToCart={addToCart} />
     </div>
   );
 }
