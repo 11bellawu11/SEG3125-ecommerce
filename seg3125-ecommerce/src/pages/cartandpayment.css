@@ -1,0 +1,35 @@
+.cart-card{
+    background-color: #150f2b;
+}
+
+.keepShoppingBtn{
+    padding: 5%;
+    font-size: 1rem;
+    text-decoration: none;
+    width: auto;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #3F8CFF;
+}
+
+.placeOrderBtn{
+    padding: 5%;
+    font-size: 1rem;
+    text-decoration: none;
+    width: auto;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #3F8CFF;
+}
+
+.form{
+  color: rgb(181, 189, 221);
+}
+
+.form-buttonRow{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+}
