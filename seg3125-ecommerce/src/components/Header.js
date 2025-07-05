@@ -28,7 +28,14 @@ const Header = ({ searchTerm, setSearchTerm, selectedGenres, toggleGenre }) => {
     <>
       <header className="header">
         <div className="col1">
-          <button className="menu-toggle" onClick={toggleSidebar}>☰</button>
+          <div className="nav-left">
+            <button className="menu-toggle" onClick={toggleSidebar}>☰</button>
+
+            <nav className="nav-links">
+               <Link to="/" className="nav-link">Home</Link>
+               <Link to="/about-us" className="nav-link">About Us</Link>
+            </nav>
+          </div>
         </div>
         <div className="col2">
           <Link to="/" className="logo">Buy Games</Link>

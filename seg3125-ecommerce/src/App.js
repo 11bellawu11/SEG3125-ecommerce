@@ -7,6 +7,7 @@ import CartAndPayment from './pages/cartandpayment';
 import AboutUs from './pages/aboutUs';
 import { CartProvider } from './components/cartupdates';
 import React, { useState } from 'react';
+import Review from './pages/review';
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
           />
           <Route path="/cart" element={<CartAndPayment />} />
           <Route path="/about-us" element={<AboutUs />} />
+           <Route path="/survey" element={<Review />} />
         </Routes>
       </Router>
     </CartProvider>

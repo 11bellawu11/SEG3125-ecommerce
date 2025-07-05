@@ -88,6 +88,7 @@ const CartAndPayment = () => {
                   variant="success"
                   type="submit"
                   disabled={cartItems.length === 0 || orderPlaced}
+                  onClick={() => navigate("/survey")}
                 >
                   Place Order
                 </Button>

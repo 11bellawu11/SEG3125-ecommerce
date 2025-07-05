@@ -1,0 +1,68 @@
+.review-container {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  font-family: sans-serif;
+}
+
+.review-body h4{
+    padding-top: 1%;
+    text-align: center;
+    font-family: sans-serif;
+    color: #ffffff;
+}
+
+.review-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.review-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.review-container label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: #333;
+}
+
+.review-container select,
+.review-container textarea {
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-top: 0.3rem;
+}
+
+.review-container button {
+  align-self: center;
+  background-color: #28a745;
+  color: white;
+  font-size: 1rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.review-container button:hover {
+  background-color: #218838;
+}
+
+.thank-you {
+  text-align: center;
+}
+
+.thank-you h3 {
+  color: #28a745;
+}
