@@ -24,24 +24,7 @@ function Home({ searchTerm, selectedGenres }) {
 
   return (
     <div className="app-container">
-      <Row>
-        <Col>
-          <Container>
-            <h3>Featured</h3>
-          </Container>
-          <Carousel>
-            <Carousel.Item>
-              <img src="./images/placeholder.jpg" alt="Slide 1" className="d-block w-100" />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img src="./images/placeholder.jpg" alt="Slide 2" className="d-block w-100" />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img src="./images/placeholder.jpg" alt="Slide 3" className="d-block w-100" />
-            </Carousel.Item>
-          </Carousel>
-        </Col>
-      </Row>
+      
 
       <div className="promo-banner">
         <h2>🎮 Great Games, Better Prices</h2>
