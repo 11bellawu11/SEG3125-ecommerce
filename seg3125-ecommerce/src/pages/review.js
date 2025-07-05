@@ -19,7 +19,7 @@ export default function Review() {
 
   return (
     <div className='review-body'>
-        <h4>Your order has been submitted successfully!</h4>
+        <h4>🎉Your order has been placed successfully!</h4>
         <div className="review-container">
 
         {submitted ? (

@@ -25,7 +25,7 @@ const CartAndPayment = () => {
 
     // Optional redirect after 3s
     setTimeout(() => {
-      navigate("/");
+      navigate("/survey");
     }, 3000);
   };
 
@@ -38,7 +38,7 @@ const CartAndPayment = () => {
 
           {orderPlaced && (
             <Alert variant="success">
-              🎉 Order placed successfully! Redirecting to shop...
+              🎉 Order placed successfully! Redirecting to survey...
             </Alert>
           )}
 
@@ -88,7 +88,6 @@ const CartAndPayment = () => {
                   variant="success"
                   type="submit"
                   disabled={cartItems.length === 0 || orderPlaced}
-                  onClick={() => navigate("/survey")}
                 >
                   Place Order
                 </Button>
