@@ -4,7 +4,7 @@ export const games = [
     title: "Doom Eternal",
     price: 29.99,
     type: "Action",
-    image: "/images/e-commerce.avif",
+    image: "/images/placeholder.jpg",
     inCart: false,
   },
   {
@@ -12,7 +12,7 @@ export const games = [
     title: "Call of Duty: Modern Warfare",
     price: 59.99,
     type: "Action",
-    image: "/images/e-commerce.avif",
+    image: "/",
     inCart: false,
   },
   {
@@ -20,7 +20,7 @@ export const games = [
     title: "Devil May Cry 5",
     price: 39.99,
     type: "Action",
-    image: "/images/e-commerce.avif",
+    image: "/",
     inCart: false,
   },
   {
@@ -28,7 +28,7 @@ export const games = [
     title: "God of War",
     price: 49.99,
     type: "Action",
-    image: "/images/e-commerce.avif",
+    image: "/",
     inCart: false,
   },
   {
@@ -36,7 +36,7 @@ export const games = [
     title: "Bayonetta 2",
     price: 34.99,
     type: "Action",
-    image: "/images/e-commerce.avif",
+    image: "/",
     inCart: false,
   },
 
@@ -45,7 +45,7 @@ export const games = [
     title: "The Legend of Zelda: Breath of the Wild",
     price: 59.99,
     type: "Adventure",
-    image: "/images/e-commerce.avif",
+    image: "/",
     inCart: false,
   },
   {
@@ -53,7 +53,7 @@ export const games = [
     title: "Uncharted 4: A Thief's End",
     price: 39.99,
     type: "Adventure",
-    image: "/images/e-commerce.avif",
+    image: "/",
     inCart: false,
   },
   {
@@ -61,7 +61,7 @@ export const games = [
     title: "Tomb Raider",
     price: 29.99,
     type: "Adventure",
-    image: "/images/e-commerce.avif",
+    image: "/",
     inCart: false,
   },
   {
@@ -69,7 +69,7 @@ export const games = [
     title: "Assassin's Creed Odyssey",
     price: 49.99,
     type: "Adventure",
-    image: "/images/e-commerce.avif",
+    image: "/",
     inCart: false,
   },
   {
@@ -77,7 +77,7 @@ export const games = [
     title: "Red Dead Redemption 2",
     price: 59.99,
     type: "Adventure",
-    image: "/images/e-commerce.avif",
+    image: "/",
     inCart: false,
   },
 
@@ -86,7 +86,7 @@ export const games = [
     title: "The Sims 4",
     price: 39.99,
     type: "Simulation",
-    image: "/images/e-commerce.avif",
+    image: "/",
     inCart: false,
   },
   {
@@ -94,7 +94,7 @@ export const games = [
     title: "Stardew Valley",
     price: 14.99,
     type: "Simulation",
-    image: "/images/e-commerce.avif",
+    image: "/",
     inCart: false,
   },
   {
@@ -102,7 +102,7 @@ export const games = [
     title: "Cities: Skylines",
     price: 29.99,
     type: "Simulation",
-    image: "/images/e-commerce.avif",
+    image: "/",
     inCart: false,
   },
   {
@@ -110,7 +110,7 @@ export const games = [
     title: "Planet Zoo",
     price: 49.99,
     type: "Simulation",
-    image: "/images/e-commerce.avif",
+    image: "/",
     inCart: false,
   },
   {
@@ -118,7 +118,7 @@ export const games = [
     title: "Euro Truck Simulator 2",
     price: 19.99,
     type: "Simulation",
-    image: "/images/e-commerce.avif",
+    image: "/",
     inCart: false,
   },
 
@@ -128,7 +128,7 @@ export const games = [
     title: "Resident Evil Village",
     price: 59.99,
     type: "Horror",
-    image: "/images/e-commerce.avif",
+    image: "/",
     inCart: false,
   },
   {
@@ -136,7 +136,7 @@ export const games = [
     title: "Outlast 2",
     price: 19.99,
     type: "Horror",
-    image: "/images/e-commerce.avif",
+    image: "/",
     inCart: false,
   },
   {
@@ -144,7 +144,7 @@ export const games = [
     title: "Silent Hill 2",
     price: 24.99,
     type: "Horror",
-    image: "/images/e-commerce.avif",
+    image: "/",
     inCart: false,
   },
   {
@@ -152,7 +152,7 @@ export const games = [
     title: "Amnesia: The Dark Descent",
     price: 14.99,
     type: "Horror",
-    image: "/images/e-commerce.avif",
+    image: "/",
     inCart: false,
   },
   {
@@ -160,7 +160,7 @@ export const games = [
     title: "Fatal Frame II",
     price: 29.99,
     type: "Horror",
-    image: "/images/e-commerce.avif",
+    image: "/",
     inCart: false,
   },
 
@@ -169,7 +169,7 @@ export const games = [
     title: "Final Fantasy VII Remake",
     price: 59.99,
     type: "RPG",
-    image: "/images/e-commerce.avif",
+    image: "/",
     inCart: false,
   },
   {
@@ -177,7 +177,7 @@ export const games = [
     title: "The Witcher 3: Wild Hunt",
     price: 39.99,
     type: "RPG",
-    image: "/images/e-commerce.avif",
+    image: "/",
     inCart: false,
   },
   {
@@ -185,7 +185,7 @@ export const games = [
     title: "Skyrim",
     price: 29.99,
     type: "RPG",
-    image: "/images/e-commerce.avif",
+    image: "/",
     inCart: false,
   },
   {
@@ -193,7 +193,7 @@ export const games = [
     title: "Dragon Age: Inquisition",
     price: 34.99,
     type: "RPG",
-    image: "/images/e-commerce.avif",
+    image: "/",
     inCart: false,
   },
   {
@@ -201,7 +201,7 @@ export const games = [
     title: "Persona 5",
     price: 49.99,
     type: "RPG",
-    image: "/images/e-commerce.avif",
+    image: "/",
     inCart: false,
   }
 ];
