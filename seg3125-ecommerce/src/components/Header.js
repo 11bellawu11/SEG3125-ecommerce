@@ -49,9 +49,9 @@ const Header = ({ searchTerm, setSearchTerm, selectedGenres, toggleGenre }) => {
 
       <aside className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
         <nav>
-          <h3>
+          <h5>
             Search filters
-          </h3>
+          </h5>
           <ul>
             {genres.map((genre) => (
               <li key={genre}>
