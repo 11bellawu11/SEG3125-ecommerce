@@ -5,6 +5,7 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import InputGroup from 'react-bootstrap/InputGroup';
 import { FaShoppingCart } from "react-icons/fa";
+import { useCart } from './cartupdates';
 
 import React, { useState } from 'react';
 import "./Header.css";
@@ -24,6 +25,8 @@ const Header = ({ searchTerm, setSearchTerm, selectedGenres, toggleGenre }) => {
     setIsSidebarOpen(prev => !prev);
   };
 
+  const { cartItems } = useCart();
+
   return (
     <>
       <header className="header">
@@ -41,16 +44,23 @@ const Header = ({ searchTerm, setSearchTerm, selectedGenres, toggleGenre }) => {
           <Link to="/" className="logo">Buy Games</Link>
         </div>
         <div className="col3">
-          <Form onSubmit={handleSearch} className="search-form">
-            <input
-              type="text"
-              placeholder="Search..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="search-input"
-            />
-            <Button type="submit" className="search-button">Go</Button>
-          </Form>
+          <div className="search-and-cart">
+            <Form onSubmit={handleSearch} className="search-form">
+              <input
+                type="text"
+                placeholder="Search..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="search-input"
+              />
+              <Button type="submit" className="search-button">Go</Button>
+            </Form>
+
+            <Link to="/cart" className="cart-icon">
+              <FaShoppingCart size={22} />
+              {cartItems.length > 0 && <span className="cart-badge">{cartItems.length}</span>}
+            </Link>
+          </div>
         </div>
       </header>
 

@@ -176,4 +176,37 @@
   color: #ddd;
 }
 
+.search-and-cart {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-icon {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.cart-icon:hover {
+  color: #3F8CFF;
+}
+
+.cart-icon {
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
 
