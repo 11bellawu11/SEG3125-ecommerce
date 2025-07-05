@@ -4,7 +4,7 @@ export const games = [
     title: "Doom Eternal",
     price: 29.99,
     type: "Action",
-    image: "/images/placeholder.jpg",
+    image: "/images/doometernal.png",
     inCart: false,
   },
   {
@@ -12,7 +12,7 @@ export const games = [
     title: "Call of Duty: Modern Warfare",
     price: 59.99,
     type: "Action",
-    image: "/",
+    image: "/images/CODMW.webp",
     inCart: false,
   },
   {
@@ -20,15 +20,15 @@ export const games = [
     title: "Devil May Cry 5",
     price: 39.99,
     type: "Action",
-    image: "/",
+    image: "/images/DMC5.webp",
     inCart: false,
   },
   {
     id: 4,
-    title: "God of War",
+    title: "God of War: Ragnarok",
     price: 49.99,
     type: "Action",
-    image: "/",
+    image: "/images/GOWR.webp",
     inCart: false,
   },
   {
@@ -36,7 +36,7 @@ export const games = [
     title: "Bayonetta 2",
     price: 34.99,
     type: "Action",
-    image: "/",
+    image: "/images/Bayonetta2.webp",
     inCart: false,
   },
 
