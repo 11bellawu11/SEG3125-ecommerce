@@ -38,7 +38,7 @@ function App() {
           />
           <Route path="/cart" element={<CartAndPayment />} />
           <Route path="/about-us" element={<AboutUs />} />
-           <Route path="/survey" element={<Review />} />
+          <Route path="/survey" element={<Review />} />
         </Routes>
       </Router>
     </CartProvider>
