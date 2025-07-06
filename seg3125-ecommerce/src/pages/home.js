@@ -31,7 +31,11 @@ function Home({ searchTerm, selectedGenres }) {
         <p>Discover second-hand gems at a fraction of the original price. Quality titles, budget-friendly.</p>
       </div>
 
-
+      {filteredGames.length === 0 ? (
+      <div className="no-results">
+        <p>No games found. Try adjusting your filters or search term!</p>
+      </div>
+    ) : ( <>
       {actionGames.length > 0 && (
         <GameRow title="Action Games" games={actionGames} onAddToCart={addToCart} />
       )}
@@ -50,8 +54,8 @@ function Home({ searchTerm, selectedGenres }) {
 
       {rpgGames.length > 0 && (
         <GameRow title="RPG Games" games={rpgGames} onAddToCart={addToCart} />
-      )}
-
+      )} </>
+    )}
     </div>
   );
 }
