@@ -41,6 +41,11 @@ const CartAndPayment = () => {
               🎉 Order placed successfully! Redirecting to survey...
             </Alert>
           )}
+          {!orderPlaced && (
+            <Alert variant="info">
+              Please enter payment details to complete your order.
+            </Alert>
+          )}
 
           <Form onSubmit={handlePlaceOrder}>
             <Form.Group className="mb-3" controlId="firstName">
