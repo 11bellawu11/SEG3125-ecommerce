@@ -41,7 +41,7 @@ const Header = ({ searchTerm, setSearchTerm, selectedGenres, toggleGenre }) => {
           </div>
         </div>
         <div className="col2">
-          <Link to="/" className="logo">Buy Games</Link>
+          <Link to="/" className="logo">GameHaven</Link>
         </div>
         <div className="col3">
           <div className="search-and-cart">

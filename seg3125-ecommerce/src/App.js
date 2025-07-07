@@ -8,6 +8,7 @@ import AboutUs from './pages/aboutUs';
 import { CartProvider } from './components/cartupdates';
 import React, { useState } from 'react';
 import Review from './pages/review';
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -41,7 +42,9 @@ function App() {
           <Route path="/survey" element={<Review />} />
         </Routes>
       </Router>
+      <Footer />
     </CartProvider>
+
   );
 }
 
