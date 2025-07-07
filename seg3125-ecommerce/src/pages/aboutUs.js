@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Link } from 'react-router-dom';
 import "./aboutUs.css"
 
 export default function AboutUs() {
@@ -62,7 +63,7 @@ export default function AboutUs() {
 
       <Row className="text-center">
             <Col>
-            <Button variant="primary" href="/">
+            <Button as={Link} to="/" variant="primary">
                 Browse Games
             </Button>
             </Col>
